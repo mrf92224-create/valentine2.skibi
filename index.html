@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Valentine ❤️</title>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #ff4e78, #ff9eb5);
+        font-family: 'Segoe UI', sans-serif;
+        overflow-x: hidden;
+    }
+
+    .card {
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(15px);
+        padding: 50px 40px;
+        border-radius: 30px;
+        text-align: center;
+        max-width: 450px;
+        width: 90%;
+        color: white;
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 0 0 25px rgba(255, 0, 100, 0.4);
+        animation: fadeIn 2s ease-in-out;
+        margin: 20px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+        color: white;
+        text-shadow: 0 0 15px rgba(255, 0, 100, 0.8);
+        word-wrap: break-word;
+    }
+
+    p {
+        font-size: 1.2em;
+        line-height: 1.6em;
+        margin-bottom: 20px;
+        word-wrap: break-word;
+    }
+
+    .heart {
+        font-size: 50px;
+        animation: heartbeat 1.5s infinite;
+    }
+
+    @keyframes heartbeat {
+        0% { transform: scale(1); }
+        25% { transform: scale(1.2); }
+        50% { transform: scale(1); }
+        75% { transform: scale(1.2); }
+        100% { transform: scale(1); }
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Tablets - iPad and larger tablets (768px and above) */
+    @media (max-width: 768px) {
+        .card {
+            padding: 40px 30px;
+            max-width: 100%;
+            width: 90%;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1em;
+            line-height: 1.5em;
+        }
+
+        .heart {
+            font-size: 40px;
+        }
+    }
+
+    /* Samsung A14 and most modern phones (720px) */
+    @media (max-width: 720px) {
+        body {
+            padding: 10px;
+        }
+
+        .card {
+            padding: 35px 20px;
+            max-width: 100%;
+            width: 95%;
+            border-radius: 25px;
+            margin: 15px;
+        }
+
+        h1 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            margin-top: 0;
+        }
+
+        p {
+            font-size: 0.95em;
+            line-height: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        .heart {
+            font-size: 35px;
+        }
+    }
+
+    /* Smaller phones (480px and below) */
+    @media (max-width: 480px) {
+        body {
+            padding: 8px;
+        }
+
+        .card {
+            padding: 25px 15px;
+            border-radius: 20px;
+            max-width: 100%;
+            width: 96%;
+            margin: 10px;
+        }
+
+        h1 {
+            font-size: 1.5em;
+            margin-bottom: 12px;
+            margin-top: 0;
+        }
+
+        p {
+            font-size: 0.9em;
+            line-height: 1.4em;
+            margin-bottom: 12px;
+        }
+
+        .heart {
+            font-size: 30px;
+        }
+    }
+
+    /* Very small phones (under 375px) */
+    @media (max-width: 375px) {
+        .card {
+            padding: 20px 12px;
+        }
+
+        h1 {
+            font-size: 1.3em;
+        }
+
+        p {
+            font-size: 0.85em;
+        }
+
+        .heart {
+            font-size: 25px;
+        }
+    }
+
+    /* Landscape orientation adjustments */
+    @media (max-height: 500px) {
+        body {
+            min-height: auto;
+            padding: 10px 0;
+        }
+
+        .card {
+            max-height: 90vh;
+            overflow-y: auto;
+            padding: 25px 20px;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 10px;
+            font-size: 0.9em;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <h1>Happy Valentine ❤️</h1>
+    <p>
+        My love, you deserve more than flowers, more than gifts, more than anything I can afford right now.<br>
+        حبيبتي، أنتِ تستحقين أكثر من الزهور، أكثر من الهدايا، وأكثر من أي شيء أستطيع تحمّله الآن.<br><br>
+
+        I may not have money to give you something big for this occasion, but I give you my heart completely.<br>
+        قد لا أملك المال لأقدم لك شيئًا كبيرًا في هذه المناسبة، لكني أقدم لك قلبي كاملًا.<br><br>
+
+        And I promise you, one day I will give you everything you deserve and more.<br>
+        وأعدكِ أنه في يومٍ ما سأمنحكِ كل ما تستحقينه وأكثر.
+    </p>
+    <div class="heart">❤️</div>
+</div>
+
+</body>
+</html>
